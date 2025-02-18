@@ -19,9 +19,12 @@ public class PrintLinkedlist {
        d.next = e;
        e.next = null;
        Node temp = a;
-       while(temp!=null) {
-         System.out.print(temp.value + " ");
-         temp = temp.next;  // Move to the next node in the linked list.
+       for(Node i = a;i!=null;i=i.next){
+         System.out.print(i.value + " ");
        }
+    //    while(temp!=null) {
+    //      System.out.print(temp.value + " ");
+    //      temp = temp.next;  // Move to the next node in the linked list.
+    //    }
     }
 }
