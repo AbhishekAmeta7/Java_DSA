@@ -20,6 +20,15 @@ public class AddDataLinkedList {
             }
             tail = newNode;
         }
+        int size(){
+            int count = 0;
+            Node currentNode = head;
+            while(currentNode!= null){
+                count++;
+                currentNode = currentNode.next;
+            }
+            return count;
+        }
         void display(){
             Node currentNode = head;
             while(currentNode!= null){
@@ -36,5 +45,6 @@ public class AddDataLinkedList {
         ll.add(20);
         ll.add(25);
         ll.display();
+        System.out.println("\nSize of the LinkedList: " + ll.size());
     }
 }
