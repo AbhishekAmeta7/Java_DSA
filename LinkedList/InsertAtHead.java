@@ -16,7 +16,6 @@ public class InsertAtHead {
                 tail = newNode;
             } else{
                 tail.next = newNode;
-                tail = newNode;
             }
             tail = newNode;
         }
